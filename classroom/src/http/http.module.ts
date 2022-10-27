@@ -8,6 +8,8 @@ import { StudentsResolver } from './graphql/resolvers/students.resolver';
 import { StudentsService } from 'src/services/students.service';
 import { CoursesResolver } from './graphql/resolvers/courses.resolver';
 import { CoursesService } from 'src/services/courses.service';
+import { EnrollmentsResolver } from './graphql/resolvers/enrollments.resolver';
+import { EnrollmentsService } from 'src/services/enrollments.service';
 
 @Module({
   imports: [
@@ -21,6 +23,8 @@ import { CoursesService } from 'src/services/courses.service';
   providers: [
     StudentsResolver,
     CoursesResolver,
+    EnrollmentsResolver,
+    EnrollmentsService,
     CoursesService,
     StudentsService,
   ],

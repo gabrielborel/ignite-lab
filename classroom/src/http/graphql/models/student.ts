@@ -1,10 +1,11 @@
 import { Field, ObjectType } from '@nestjs/graphql';
+import { Enrollment } from './enrollment';
 
 @ObjectType()
 export class Student {
   @Field()
   id: string;
 
-  // @Field(() => [])
-  // enrollments: Enrollment[]
+  @Field(() => [Enrollment])
+  enrollments: Enrollment[];
 }
