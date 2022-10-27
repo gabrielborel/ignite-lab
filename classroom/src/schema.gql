@@ -2,6 +2,10 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Student {
+  id: String!
+}
+
 type Query {
-  hello: String!
+  students: [Student!]!
 }
