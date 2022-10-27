@@ -6,6 +6,13 @@ type Student {
   id: String!
 }
 
+type Course {
+  id: ID!
+  title: String!
+  slug: String!
+}
+
 type Query {
   students: [Student!]!
+  courses: [Course!]!
 }
