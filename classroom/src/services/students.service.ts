@@ -12,4 +12,16 @@ export class StudentsService {
   getStudentById(id: string) {
     return this.prisma.student.findUnique({ where: { id } });
   }
+
+  listEnrollmentsByStudentId(studentId: string) {
+    return this.prisma.enrollment.findMany({
+      where: {
+        studentId,
+        canceledAt: null,
+      },
+      orderBy: {
+        canceledAt: 'desc',
+      },
+    });
+  }
 }
