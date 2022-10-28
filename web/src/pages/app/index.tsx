@@ -15,3 +15,4 @@ export default function Home() {
 }
 
 export const getServerSideProps = withPageAuthRequired();
+
