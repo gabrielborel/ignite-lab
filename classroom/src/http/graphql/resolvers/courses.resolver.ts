@@ -7,7 +7,6 @@ import { CoursesService } from 'src/services/courses.service';
 import { StudentsService } from 'src/services/students.service';
 import { CreateCourseInput } from '../inputs/create-course-input';
 import { Course } from '../models/course';
-import { Enrollment } from '../models/enrollment';
 
 @Resolver(() => Course)
 export class CoursesResolver {
